@@ -1,31 +1,131 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: gonsett
+repo: estado
+
+# Cada caída abre un aviso asignado a gonsett (llega por mail) y se cierra solo al volver.
+assignees:
+  - gonsett
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Quantum Coffee
+    url: https://quantumcoffee.xyz
+  - name: Canova
+    url: https://canova.quantumcoffee.xyz
+  - name: Canova · app
+    url: https://app.canova.quantumcoffee.xyz
+  - name: Caudal
+    url: https://caudal.quantumcoffee.xyz
+  - name: Caudal · app
+    url: https://app.caudal.quantumcoffee.xyz
+  - name: Zenit
+    url: https://zenit.quantumcoffee.xyz
+  - name: Zenit · app
+    url: https://app.zenit.quantumcoffee.xyz
+  - name: Taival
+    url: https://taival.quantumcoffee.xyz
+  - name: Taival · app
+    url: https://app.taival.quantumcoffee.xyz
+  - name: Tupé
+    url: https://tupe.quantumcoffee.xyz
+  - name: Tupé · app
+    url: https://app.tupe.quantumcoffee.xyz
+  - name: Ring Closers
+    url: https://ringclosers.quantumcoffee.xyz
+  - name: Nocturna
+    url: https://nocturna.quantumcoffee.xyz
+  - name: YAXmedia · Alberto Berdini
+    url: https://yaxmedia-alberto-berdini.vercel.app
+  - name: YAXmedia · Ángel Di Naro
+    url: https://yaxmedia-angel-di-naro.vercel.app
+  - name: YAXmedia · AB Collection
+    url: https://yaxmedia-ab-collection.vercel.app
+  - name: YAXmedia · Daniel Lerner
+    url: https://yaxmedia-plan-daniel-lerner.vercel.app
+  - name: YAXmedia · Marcos Argenti
+    url: https://yaxmedia-marcos-argenti.vercel.app
+  - name: YAXmedia · Servicios completa
+    url: https://yaxmedia-servicios-completa.vercel.app
+  - name: YAXmedia · Servicios
+    url: https://yaxmedia-servicios.vercel.app
+  - name: YAXmedia · Presentación
+    url: https://yaxmedia-presentacion.vercel.app
+  - name: YAXmedia · Propuesta
+    url: https://yaxmedia-propuesta.vercel.app
+  - name: YAXmedia · José
+    url: https://yaxmedia-jose.vercel.app
+  - name: YAXmedia · Diego Donalisis
+    url: https://yaxmedia-diego-donalisis.vercel.app
+  - name: YAXmedia · Fran Piñeiro Negri
+    url: https://yaxmedia-fran-pineiro-negri.vercel.app
+  - name: YAXmedia · Jorge Sánchez
+    url: https://yaxmedia-jorge-sanchez.vercel.app
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /estado
+  name: Estado · Quantum Coffee
+  introTitle: "Estado de todas las webs y apps"
+  introMessage: Se revisa cada 5 minutos. Verde = funcionando; rojo = caída (se avisa por mail y se cierra sola al volver).
   navbar:
-    - title: Status
+    - title: Estado
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+  i18n:
+    activeIncidents: Caídas activas
+    allSystemsOperational: Todo funcionando
+    incidentReport: "Caída #$NUMBER →"
+    activeIncidentSummary: "Abierta el $DATE con $POSTS novedades"
+    incidentTitle: "Caída #$NUMBER"
+    incidentDetails: Detalle
+    incidentFixed: Resuelta
+    incidentOngoing: En curso
+    incidentOpenedAt: Abierta
+    incidentClosedAt: Cerrada
+    incidentBack: "← Volver"
+    pastIncidents: Caídas anteriores
+    pastIncidentsResolved: "Resuelta en $MINUTES minutos con $POSTS novedades"
+    liveStatus: En vivo
+    overallUptime: "Disponibilidad total: $UPTIME"
+    overallUptimeTitle: Disponibilidad total
+    averageResponseTime: "Respuesta promedio: $TIMEms"
+    averageResponseTimeTitle: Respuesta promedio
+    sevelDayResponseTime: Respuesta 7 días
+    responseTimeMs: Tiempo de respuesta (ms)
+    up: Funciona
+    down: Caída
+    degraded: Lenta
+    ms: ms
+    loading: Cargando
+    navGitHub: GitHub
+    footer: Upptime en GitHub
+    rateLimitExceededTitle: Límite de consultas
+    rateLimitExceededIntro: Se alcanzó el límite de GitHub; volvé a intentar en un rato.
+    rateLimitExceededWhatDoesErrorMean: ¿Qué significa?
+    rateLimitExceededErrorMeaning: GitHub limita las consultas por hora.
+    rateLimitExceededErrorHowCanFix: ¿Cómo se arregla?
+    rateLimitExceededErrorFix: Esperá unos minutos o recargá más tarde.
+    rateLimitExceededGeneratePAT: Generá una clave
+    rateLimitExceededHasSet: Ya tenés una clave guardada.
+    rateLimitExceededRemoveToken: Quitar clave
+    rateLimitExceededGenerateNext: y pegala acá
+    rateLimitExceededTokenLabel: Clave de GitHub
+    rateLimitExceededTokenPlaceholder: Pegá la clave
+    rateLimitExceededSubmit: Guardar
+    errorTitle: Error
+    errorIntro: No se pudo cargar el estado.
+    errorText: Volvé a intentar en un rato.
+    errorHome: Inicio
+    pastScheduledMaintenance: Mantenimientos anteriores
+    scheduledMaintenance: Mantenimiento programado
+    scheduledMaintenanceSummaryStarted: "Empezó el $DATE, dura $DURATION minutos"
+    scheduledMaintenanceSummaryStarts: "Empieza el $DATE, dura $DURATION minutos"
+    startedAt: Empezó
+    startsAt: Empieza
+    duration: Duración
+    durationMin: $DURATION minutos
+    incidentCompleted: Terminado
+    incidentScheduled: Programado
+    duration24H: 24 h
+    duration7D: 7 días
+    duration30D: 30 días
+    duration1Y: 1 año
+    durationAll: Todo
